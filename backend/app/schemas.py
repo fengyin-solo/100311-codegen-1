@@ -268,3 +268,29 @@ class EmergencydrillEntry(BaseModel):
     field_5: str | None = None  # 演练评估
     field_6: str | None = None  # 改进措施
     field_7: str | None = None  # 演练状态
+
+
+class HazardEntry(BaseModel):
+    """隐患排查整改台账明细结构。"""
+
+    field_0: str | None = None  # 隐患编号
+    field_1: str | None = None  # 隐患内容
+    field_2: str | None = None  # 发现地点
+    field_3: str | None = None  # 隐患等级
+    field_4: str | None = None  # 责任单位
+    field_5: str | None = None  # 责任人
+    field_6: str | None = None  # 发现日期
+    field_7: str | None = None  # 整改期限
+
+
+class SupervisionEntry(BaseModel):
+    """矿级督办台账明细结构。"""
+
+    field_0: str | None = None  # 督办编号
+    field_1: str | None = None  # 隐患编号
+    field_2: str | None = None  # 隐患内容
+    field_3: str | None = None  # 责任单位
+    field_4: str | None = None  # 升办日期
+    field_5: str | None = None  # 整改期限
+    field_6: str | None = None  # 办理进度
+    field_7: str | None = None  # 督办状态
